@@ -1,6 +1,7 @@
 # Skill Check Simulator
 
 demo: https://cary1204.github.io/skill-check/
+
 A simple browser game for practicing skill checks. A needle spins around a ring, and you press Space, or click or tap the ring, when it is over the zone.
 
 - **Standard:** a wide zone, with a check every one to three seconds.
