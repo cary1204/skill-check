@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skill Check Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <h1>Skill Check</h1>
+
+  <div class="ring-wrap" id="ringWrap">
+    <canvas id="ring"></canvas>
+    <div id="callout" class="callout"></div>
+  </div>
+
+  <div class="row">
+    <button id="start" type="button">Start</button>
+    <button id="mute" type="button" aria-pressed="true">Sound: on</button>
+    <label>Volume <input type="range" id="volume" min="0" max="100" value="100"></label>
+  </div>
+
+  <div class="row" id="modes">
+    <label><input type="radio" name="mode" value="standard" checked> Standard</label>
+    <label><input type="radio" name="mode" value="challenge"> Challenge</label>
+  </div>
+
+  <progress id="bar" max="100" value="0"></progress>
+  <p id="done" hidden></p>
+
+  <ul class="stats">
+    <li>Time: <span id="stTime">0.0 s</span></li>
+    <li>Best time: <span id="stBest">—</span></li>
+    <li>Hits: <span id="stHits">0</span></li>
+    <li>Great: <span id="stGreat">0</span></li>
+    <li>Missed: <span id="stMiss">0</span></li>
+    <li>Accuracy: <span id="stAcc">—</span></li>
+    <li>Streak: <span id="stStreak">0</span></li>
+    <li>Best streak: <span id="stBestStreak">0</span></li>
+  </ul>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/store.js"></script>
+<script src="js/game.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
