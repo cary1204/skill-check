@@ -26,17 +26,17 @@
         duration: 1150,         // ms for the needle to make one full turn
         gap: [1200, 2800],      // ms between a check ending and the next one appearing
         hold: 500,              // ms the needle stays frozen after a press
-        gain: { great: 10, good: 6, miss: -10 }  // progress change in percent
+        gain: { great: 10, good: 6, miss: -12 }  // progress change in percent
       },
 
       challenge: {
         label: 'Challenge',
         zone: 24,
         great: 5,
-        duration: 750,
-        gap: [350, 900],
+        duration: 800,
+        gap: [810, 2400],
         hold: 250,
-        gain: { great: 5, good: 3, miss: -8 }
+        gain: { great: 15, good: 10, miss: -5 }
       }
     }
   };
